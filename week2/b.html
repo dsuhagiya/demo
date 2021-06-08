@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<head>
+    <title>My first webpage</title>
+    <style>
+        button {
+            background-color: tomato;
+        }
+        
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+            padding: 15px 25px;
+            text-align: center;
+            display: inline-block;
+        }
+        
+        a:visited {
+            color: red;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        div {
+            background-image: url(images/1622527606738.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        table,
+        th,
+        td {
+            border-spacing: 5px;
+            border: 1px solid black;
+            text-align: center;
+            padding: 15px;
+            overflow-x: auto;
+            /* border-collapse: collapse;   */
+        }
+        
+        #t1 {
+            background-color: teal;
+        }
+        
+        #t1 tr:nth-child(even) {
+            background-color: #eee;
+        }
+        
+        #t1 tr:nth-child(odd) {
+            background-color: rgb(200, 241, 15);
+        }
+        
+        #t1 th {
+            color: white;
+            background-color: black;
+            height: 30px;
+            vertical-align: top;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+        
+        ul>li {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: #111111;
+        }
+    </style>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").style.color = "red";
+        }
+    </script>
+</head>
+
+<body>
+    <h1 style="background-color: crimson ; text-align: center;">This is page heading.</h1>
+    <h1 style="color: blue; font-family: cursive;">Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <p title=Welcome style="color:violet"><em>This is a paragraph.</em><br>Hello <sub>good</sub> <sup>morning</sup>.</p>
+    <p title="I'm 'first' tooltip">This is seconf paragraph.</p><br><strong>This text is important!</strong>
+    <a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a><br><i>This text is italic</i><br><small>This
+        is some smaller text.</small><br>
+    <p>My favorite color is <del>blue</del> red.</p>
+    <br>My <mark>favorite</mark> color is <del>blue</del> <ins>red</ins>.<br>
+    <blockquote style="background: cornsilk;" cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+    </blockquote>
+
+    <p>WWF's goal is to: <q style="background: black;color: ghostwhite ;">Build a future where people live in harmony
+            with nature.</q></p>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <address>
+        Written by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <bdo dir="rtl">This text will be written from right to left</bdo><br>
+    <a href="#C4">Jump to Chapter 4</a><br>
+    <a href="mailto:drashtisuhagiya0507@gmail.com">Send email</a><br>
+    <button onclick="document.location='a.html'">HTML Tutorial</button><br>
+    <a href="a.html" target="_top" title="go to a.html page">visit</a><br>
+    <img src="images/1622527606738.jpg" alt="Hello" width="200" height="200"><br>
+    <h2 id="C4">Chapter 4</h2><br>
+    <div id="demo">
+        You can specify background images<br> for any visible HTML element.<br> In this example, the background image<br> is specified for a div element.<br> By default, the background-image<br> will repeat itself in the direction(s)<br> where it is smaller
+        than the element<br> where it is specified. (Try resizing the<br> browser window to see how the<br> background image behaves.
+    </div>
+    <button onclick="myFunction()" type="button">Submit</button>
+    <div style="overflow-x:auto;">
+        <table id="t1" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>FIRST NAME</th>
+                    <TH>LAST NAME</TH>
+                    <TH>AGE</TH>
+                </tr>
+            </thead>
+            <TR>
+                <TD>JOHN</TD>
+                <TD>MARK</TD>
+                <TD>35</TD>
+            </TR>
+            <TR>
+                <TD>JOHN</TD>
+                <TD>MARK</TD>
+                <TD>35</TD>
+            </TR>
+            <TR>
+                <TD>JOHN</TD>
+                <TD>MARK</TD>
+                <TD>35</TD>
+            </TR>
+            <TR>
+                <TD>JOHN</TD>
+                <TD>MARK</TD>
+                <TD>35</TD>
+            </TR>
+        </table>
+    </div>
+
+    <ul>
+        <li>apple</li>
+        <li>orange
+            <ul>
+                <li>Sweet</li>
+                <li>Sour</li>
+            </ul>
+        </li>
+        <li>mango</li>
+    </ul>
+    <ol start="50">
+        <li>apple</li>
+        <li>orange
+            <ol>
+                <li>Sweet</li>
+                <li>Sour</li>
+            </ol>
+        </li>
+        <li>mango</li>
+    </ol>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+    </dl>
+
+    <iframe src="a.html" height="200" width="300" title="Iframe Example"></iframe>
+    <iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+
+    <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+    <form action="a.html" target="_blank" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50"> 100 +
+        <input type="number" id="b" name="b" value="50"> =
+        <output name="x" for="a b">100</output>
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">Firstname:</label><br><input type="text" id="fname" name="fname" value="John"><br>
+            <label for="fname">Lastname:</label><br><input type="text" id="lname" name="lname" value="Doe"><br>
+            <input type="radio" name="male" id="male" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" name="female" id="female" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" name="other" id="other" value="other">
+            <label for="other">Other</label><br>
+
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br>
+
+            <select id="cars" name="cars" size="2">
+                <option value="volvo">Volvo</option>
+                <option value="saab" selected>Saab</option>
+                <option value="fiat">Fiat</option>
+            </select><br>
+
+            <textarea cols="30" rows="5" name="address"></textarea><br>
+
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+
+
+
+            <button onclick="alert('Hello World')">Click me!</button><br>
+        </fieldset>
+    </form>
+
+    <video width="400" controls>
+        <source src="mov_bbb.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML video.
+    </video>
+
+    <p>
+        Video courtesy of
+        <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+    </p>
+    <p><iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+        </iframe></p>
+
+</body>
+
+</html>

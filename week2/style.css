@@ -1,0 +1,106 @@
+.s1 {
+    color: darkblue;
+    font-size: 100px;
+    text-align: center !important;
+}
+
+h1,
+p {
+    font-family: "Sofia", serif;
+    color: blueviolet;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+#p1 {
+    background-color: cornflowerblue;
+    color: darkmagenta;
+    text-align: left;
+    text-shadow: none !important;
+}
+
+ul {
+    list-style-type: none;
+    background-color: blueviolet;
+    border: 1px solid #555;
+}
+
+li {
+    float: left;
+    display: inline;
+}
+
+li a {
+    padding: 8px;
+    background-color: cyan;
+    display: block;
+    list-style-type: none;
+}
+
+li a:hover {
+    background-color: white;
+    color: red;
+}
+
+table,
+th,
+td {
+    content: inherit;
+    padding: 15px;
+    overflow-x: auto;
+    float: left;
+    text-align: center;
+}
+
+#container {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    white-space: initial;
+    text-indent: 5%;
+    line-height: 1.8;
+    letter-spacing: normal;
+    color: black;
+    font-family: cursive;
+    background-image: url(images/1622527606738.jpg);
+    opacity: 0.3;
+}
+
+pre {
+    background-image: url(images/1622527606738.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+
+.gallery {
+    border: darkblue;
+    float: left;
+    width: 180px;
+    margin: 5px;
+}
+
+.gallery:hover {
+    border: 1px solid darkred;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    #p1 {
+        background-color: chartreuse;
+        color: black;
+    }
+}
