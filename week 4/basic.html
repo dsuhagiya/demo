@@ -1,0 +1,115 @@
+<script>
+    var chaitanya = {
+        "firstName": "Chaitanya",
+        "lastName": "Singh",
+        "age": "28"
+    };
+    // var myJSObject = JSON.parse(chaitanya);
+    //var jsonText = JSON.stringify(myJSObject);
+    console.log(chaitanya)
+        //  console.log(jsonText)
+
+
+    var students = [{
+        "name": "John",
+        "age": "23",
+        "city": "Agra"
+    }, {
+        "name": "Steve",
+        "age": "28",
+        "city": "Delhi"
+    }, {
+        "name": "Peter",
+        "age": "32",
+        "city": "Chennai"
+    }, {
+        "name": "Chaitanya",
+        "age": "28",
+        "city": "Bangalore"
+    }]
+
+    var msg = 'Multiline \n\
+    string ';
+
+    console.log(msg);
+
+    let p =
+        `This text
+can
+span multiple lines`;
+    console.log(p)
+
+    let post = {
+        title: 'JavaScript Template Literals',
+        excerpt: 'Introduction to JavaScript template literals in ES6',
+        body: 'Content of the post will be here...',
+        tags: ['es6', 'template literals', 'javascript']
+    };
+
+    console.log(post)
+
+    let {
+        title,
+        excerpt,
+        body,
+        tags
+    } = post;
+
+    var postHtml = `<article>
+<header>
+    <h1>${title}</h1>
+</header>
+<section>
+    <div>${excerpt}</div>
+    <div>${body}</div>
+</section>
+<footer>
+    <ul>
+      ${tags.map(tag => `<li>${tag}</li>`).join('\n      ')}
+    </ul>
+</footer>`;
+
+
+
+
+
+var Polygon = class Polygon { 
+   constructor(height, width) { 
+      this.height = height; 
+      this.width = width; 
+      console.log(height)
+      console.log(width)
+   } 
+}
+
+var obj = new Polygon(10,12)
+
+class Student {
+      constructor(rno,fname,lname){
+         this.rno = rno
+         this.fname = fname
+         this.lname = lname
+         console.log('inside constructor')
+      }
+      set rollno(newRollno){
+         console.log("inside setter")
+         this.rno = newRollno
+      }
+   }
+   let s1 = new Student(101,'Sachin','Tendulkar')
+   console.log(s1)
+   //setter is called
+  s1.rollno = 201
+   console.log(s1)
+
+
+const arr=[1,2,3,4,5,6]
+
+const arr1 =arr.map( x=>x+1)
+console.log(arr1)
+
+const arr2= arr.filter(x=>x>3).reduce(function(num1,num2){
+    return num1+num2
+})
+console.log(arr2)
+</script>

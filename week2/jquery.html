@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#click").click(function() {
+                $("p:first").slidetoggle();
+            });
+        });
+        $(document).ready(function() {
+                $(".bye").dblclick(function() {
+                    $("input").fadeIn(3000);
+                })
+            })
+            // $(document).ready(function() {
+            //     $("#p1").mouseenter(function() {
+            //         alert("you enterd p1")
+            //     })
+            // })
+        $(document).ready(function() {
+            $("input").focus(function() {
+                $(this).css("background-color", "red");
+            })
+        })
+        $(document).ready(function() {
+            $("input").blur(function() {
+                $(this).css("background-color", "yellow");
+            })
+        })
+        $(document).ready(function() {
+            $("#show").click(function() {
+                $("input").attr("style", "background-color:yellow");
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <p id="p1" style="display: none;">Hello World!</p>
+    <p id="p2">Good Morning <b>People</b></p>
+    <button id="click">Click me!</button>
+    <h2 id="h">Hey Whatsup!</h2>
+    <button class="bye">bye</button>
+    <input type="text" value="hello" style="color: blueviolet;">
+    <button id="show">show</button>
+</body>
+
+</html>
